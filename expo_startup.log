@@ -1,0 +1,136 @@
+  --non-interactive is not supported, use $CI=1 instead
+Starting project at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+The following packages should be updated for best compatibility with the installed expo version:
+  @react-native-async-storage/async-storage@3.0.1 - expected version: 2.2.0
+  expo@55.0.8 - expected version: ~55.0.15
+  expo-status-bar@55.0.4 - expected version: ~55.0.5
+  react-native@0.83.2 - expected version: 0.83.4
+  react-native-safe-area-context@5.7.0 - expected version: ~5.6.2
+  react-native-screens@4.24.0 - expected version: ~4.23.0
+Your project may not work correctly until you install the expected versions of the packages.
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web Bundling failed 1717ms index.js (600 modules)
+ ERROR  SyntaxError: /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/src/screens/OrdersScreen.js: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (38:8)
+
+  36 |           })}
+  37 |         </View>
+> 38 |         <View style={styles.orderFooter}>
+     |         ^
+  39 |           <Text style={styles.orderTotal}>{order.valor_total.toFixed(2)}€</Text>
+  40 |           <Text style={styles.itemCount}>{items.length} produto{items.length !== 1 ? 's' : ''}</Text>
+  41 |         </View>
+    at constructor (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:365:19)
+    at FlowParserMixin.raise (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:6599:19)
+    at FlowParserMixin.jsxParseElementAt (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4742:18)
+    at FlowParserMixin.jsxParseElement (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4749:17)
+    at FlowParserMixin.parseExprAtom (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4759:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11081:23)
+    at FlowParserMixin.parseUpdate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11066:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11046:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10899:61)
+    at FlowParserMixin.parseExprOps (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10904:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10881:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10831:21)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3498:39
+    at FlowParserMixin.tryParse (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:6907:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3498:18)
+    at FlowParserMixin.parseExpressionBase (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10784:23)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10780:39
+    at FlowParserMixin.allowInAnd (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12421:16)
+    at FlowParserMixin.parseExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10780:17)
+    at FlowParserMixin.parseStatementContent (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12895:23)
+    at FlowParserMixin.parseStatementLike (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12767:17)
+    at FlowParserMixin.parseStatementLike (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:2918:24)
+    at FlowParserMixin.parseStatementListItem (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12747:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13316:61)
+    at FlowParserMixin.parseBlockBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13309:10)
+    at FlowParserMixin.parseBlock (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13297:10)
+    at FlowParserMixin.parseFunctionBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12100:24)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:2892:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3068:16)
+    at FlowParserMixin.parseFunctionBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:2892:12)
+    at FlowParserMixin.parseArrowExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12075:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11687:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3591:18)
+    at FlowParserMixin.parseExprAtom (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11331:23)
+    at FlowParserMixin.parseExprAtom (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4764:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11081:23)
+    at FlowParserMixin.parseUpdate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11066:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11046:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10899:61)
+    at FlowParserMixin.parseExprOps (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10904:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10881:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10831:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3549:18)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10800:39
+    at FlowParserMixin.allowInAnd (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12421:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10800:17)
+    at FlowParserMixin.parseVar (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13384:91)
+    at FlowParserMixin.parseVarStatement (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13230:10)
+    at FlowParserMixin.parseStatementContent (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12851:23)
+    at FlowParserMixin.parseStatementLike (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12767:17)
+Web Bundling failed 97ms index.js (1 module)
+ ERROR  SyntaxError: /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/src/screens/OrdersScreen.js: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (38:8)
+
+  36 |           })}
+  37 |         </View>
+> 38 |         <View style={styles.orderFooter}>
+     |         ^
+  39 |           <Text style={styles.orderTotal}>{order.valor_total.toFixed(2)}€</Text>
+  40 |           <Text style={styles.itemCount}>{items.length} produto{items.length !== 1 ? 's' : ''}</Text>
+  41 |         </View>
+    at constructor (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:365:19)
+    at FlowParserMixin.raise (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:6599:19)
+    at FlowParserMixin.jsxParseElementAt (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4742:18)
+    at FlowParserMixin.jsxParseElement (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4749:17)
+    at FlowParserMixin.parseExprAtom (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4759:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11081:23)
+    at FlowParserMixin.parseUpdate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11066:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11046:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10899:61)
+    at FlowParserMixin.parseExprOps (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10904:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10881:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10831:21)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3498:39
+    at FlowParserMixin.tryParse (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:6907:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3498:18)
+    at FlowParserMixin.parseExpressionBase (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10784:23)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10780:39
+    at FlowParserMixin.allowInAnd (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12421:16)
+    at FlowParserMixin.parseExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10780:17)
+    at FlowParserMixin.parseStatementContent (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12895:23)
+    at FlowParserMixin.parseStatementLike (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12767:17)
+    at FlowParserMixin.parseStatementLike (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:2918:24)
+    at FlowParserMixin.parseStatementListItem (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12747:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13316:61)
+    at FlowParserMixin.parseBlockBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13309:10)
+    at FlowParserMixin.parseBlock (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13297:10)
+    at FlowParserMixin.parseFunctionBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12100:24)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:2892:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3068:16)
+    at FlowParserMixin.parseFunctionBody (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:2892:12)
+    at FlowParserMixin.parseArrowExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12075:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11687:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3591:18)
+    at FlowParserMixin.parseExprAtom (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11331:23)
+    at FlowParserMixin.parseExprAtom (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:4764:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11081:23)
+    at FlowParserMixin.parseUpdate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11066:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:11046:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10899:61)
+    at FlowParserMixin.parseExprOps (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10904:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10881:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10831:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:3549:18)
+    at /Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10800:39
+    at FlowParserMixin.allowInAnd (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12421:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:10800:17)
+    at FlowParserMixin.parseVar (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13384:91)
+    at FlowParserMixin.parseVarStatement (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:13230:10)
+    at FlowParserMixin.parseStatementContent (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12851:23)
+    at FlowParserMixin.parseStatementLike (/Users/luiscarlosnobrefigueira/Downloads/SafeKitApp/node_modules/@babel/parser/lib/index.js:12767:17)
